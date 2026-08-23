@@ -19,8 +19,26 @@
       "match": "\\b(print|println|read)\\b"
     },
     {
+      "name": "storage.type.vec.pn",
+      "begin": "\\b(vec)(<)",
+      "beginCaptures": {
+        "1": { "name": "storage.type.pn" },
+        "2": { "name": "punctuation.definition.typeparameters.begin.pn" }
+      },
+      "end": "(>)",
+      "endCaptures": {
+        "1": { "name": "punctuation.definition.typeparameters.end.pn" }
+      },
+      "patterns": [
+        {
+          "name": "storage.type.pn",
+          "match": "\\b(int8|int16|int32|int64|uint8|uint16|uint32|uint64|float32|float64|char|string|bool)\\b"
+        }
+      ]
+    },
+    {
       "name": "storage.type.pn",
-      "match": "\\b(int|float|double|char|string|bool|long|short|signed|unsigned|vec)\\b"
+      "match": "\\b(int8|int16|int32|int64|uint8|uint16|uint32|uint64|float32|float64|char|string|bool|vec)\\b"
     },
     {
       "name": "constant.language.pn",
@@ -29,6 +47,10 @@
     {
       "name": "constant.numeric.pn",
       "match": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "name": "keyword.operator.ternary.pn",
+      "match": "\\?"
     },
     {
       "name": "entity.name.function.vec.method.pn",

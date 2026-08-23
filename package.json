@@ -3,7 +3,7 @@
   "publisher": "tanvir",
   "displayName": "PiNum Lang",
   "description": "Syntax highlighting for the PiNum programming language.",
-  "version": "1.3.0",
+  "version": "1.3.3",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.60.0"
