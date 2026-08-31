@@ -1,97 +1,97 @@
 {
-  "name": "PiNum",
-  "scopeName": "source.pn",
+  "name": "Quil",
+  "scopeName": "source.quil",
   "patterns": [
     {
-      "name": "comment.line.hashtag.pn",
+      "name": "comment.line.hashtag.quil",
       "match": "#.*$"
     },
     {
-      "name": "keyword.control.directive.pn",
+      "name": "keyword.control.directive.quil",
       "match": "@\\w+"
     },
     {
-      "name": "keyword.control.pn",
+      "name": "keyword.control.quil",
       "match": "\\b(if|else|while|for|break|continue|return|fn)\\b"
     },
     {
-      "name": "support.function.builtin.pn",
+      "name": "support.function.builtin.quil",
       "match": "\\b(print|println|read)\\b"
     },
     {
-      "name": "storage.type.vec.pn",
+      "name": "storage.type.vec.quil",
       "begin": "\\b(vec)(<)",
       "beginCaptures": {
-        "1": { "name": "storage.type.pn" },
-        "2": { "name": "punctuation.definition.typeparameters.begin.pn" }
+        "1": { "name": "storage.type.quil" },
+        "2": { "name": "punctuation.definition.typeparameters.begin.quil" }
       },
       "end": "(>)",
       "endCaptures": {
-        "1": { "name": "punctuation.definition.typeparameters.end.pn" }
+        "1": { "name": "punctuation.definition.typeparameters.end.quil" }
       },
       "patterns": [
         {
-          "name": "storage.type.pn",
+          "name": "storage.type.quil",
           "match": "\\b(int8|int16|int32|int64|uint8|uint16|uint32|uint64|float32|float64|char|string|bool)\\b"
         }
       ]
     },
     {
-      "name": "storage.type.pn",
+      "name": "storage.type.quil",
       "match": "\\b(int8|int16|int32|int64|uint8|uint16|uint32|uint64|float32|float64|char|string|bool|vec)\\b"
     },
     {
-      "name": "constant.language.pn",
+      "name": "constant.language.quil",
       "match": "\\b(true|false)\\b"
     },
     {
-      "name": "constant.numeric.pn",
+      "name": "constant.numeric.quil",
       "match": "\\b\\d+(\\.\\d+)?\\b"
     },
     {
-      "name": "keyword.operator.ternary.pn",
+      "name": "keyword.operator.ternary.quil",
       "match": "\\?"
     },
     {
-      "name": "entity.name.function.vec.method.pn",
+      "name": "entity.name.function.vec.method.quil",
       "match": "\\b(append|size)\\b"
     },
     {
-      "name": "string.quoted.double.pn",
+      "name": "string.quoted.double.quil",
       "begin": "\"",
       "end": "\"",
       "patterns": [
         {
-          "name": "constant.character.escape.pn",
+          "name": "constant.character.escape.quil",
           "match": "\\\\."
         }
       ]
     },
     {
-      "name": "string.quoted.single.pn",
+      "name": "string.quoted.single.quil",
       "begin": "'",
       "end": "'",
       "patterns": [
         {
-          "name": "constant.character.escape.pn",
+          "name": "constant.character.escape.quil",
           "match": "\\\\."
         }
       ]
     },
     {
-      "name": "keyword.operator.increment.pn",
+      "name": "keyword.operator.increment.quil",
       "match": "\\+\\+|--"
     },
     {
-      "name": "keyword.operator.assignment.compound.pn",
+      "name": "keyword.operator.assignment.compound.quil",
       "match": "\\+=|-=|\\*=|/=|%="
     },
     {
-      "name": "keyword.operator.comparison.pn",
+      "name": "keyword.operator.comparison.quil",
       "match": "==|!=|<=|>=|&&|\\|\\|"
     },
     {
-      "name": "keyword.operator.pn",
+      "name": "keyword.operator.quil",
       "match": "[+\\-\\*/%=<>!&\\|?~:]"
     }
   ]

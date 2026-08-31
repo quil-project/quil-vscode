@@ -1,6 +1,6 @@
-# PiNum Language Support
+# Quil Language Support
 
-Syntax highlighting for the [PiNum](https://github.com/pinum-project/PiNum-Lang) programming language (`.pn` files).
+Syntax highlighting for the [Quil](https://github.com/quil-project/quil) programming language (`.quil` and `.qil` files).
 
 ## Features
 
@@ -13,7 +13,7 @@ Syntax highlighting for the [PiNum](https://github.com/pinum-project/PiNum-Lang)
 Install the `.vsix` from the command line:
 
 ```bash
-code --install-extension pinum-lang-1.0.1.vsix
+code --install-extension quil-lang-1.0.1.vsix
 ```
 
 Or use the **Extensions** panel → `...` → **Install from VSIX...** and pick the file.
@@ -22,9 +22,9 @@ Or use the **Extensions** panel → `...` → **Install from VSIX...** and pick 
 
 ## Usage
 
-Any file ending in `.pn` is automatically recognized as PiNum. If highlighting does not appear:
+Any file ending in `.quil` or `.qil` is automatically recognized as Quil. If highlighting does not appear:
 
-1. Run the command palette → `Developer: Inspect Editor Tokens and Scopes` and check the scope is `source.pn`.
+1. Run the command palette → `Developer: Inspect Editor Tokens and Scopes` and check the scope is `source.quil`.
 2. If the scope shows plain text, reload the window (`Developer: Reload Window`).
 
 ## Release Notes

@@ -1,8 +1,8 @@
 {
-  "name": "pinum-lang",
+  "name": "quil-lang",
   "publisher": "tanvir",
-  "displayName": "PiNum Lang",
-  "description": "Syntax highlighting for the PiNum programming language.",
+  "displayName": "Quil Lang",
+  "description": "Syntax highlighting for the Quil programming language.",
   "version": "1.3.3",
   "icon": "icon.png",
   "engines": {
@@ -12,19 +12,19 @@
     "Programming Languages"
   ],
   "keywords": [
-    "pinum",
+    "quil",
     "language",
     "transpiler",
     "syntax highlighting"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/pinum-project/PiNum-Lang"
+    "url": "https://github.com/quil-project/quil"
   },
   "bugs": {
-    "url": "https://github.com/pinum-project/PiNum-Lang/issues"
+    "url": "https://github.com/quil-project/quil/issues"
   },
-  "homepage": "https://pinum-project.github.io",
+  "homepage": "https://quil-project.github.io",
   "license": "MIT",
   "galleryBanner": {
     "color": "#010000",
@@ -32,15 +32,15 @@
   },
   "contributes": {
     "languages": [{
-      "id": "pinum",
-      "aliases": ["PiNum", "pinum"],
-      "extensions": [".pn"],
+      "id": "quil",
+      "aliases": ["Quil", "quil"],
+      "extensions": [".quil", ".qil"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "pinum",
-      "scopeName": "source.pn",
-      "path": "./syntaxes/pinum.tmLanguage.json"
+      "language": "quil",
+      "scopeName": "source.quil",
+      "path": "./syntaxes/quil.tmLanguage.json"
     }]
   }
 }
