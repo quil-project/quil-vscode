@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="quil_banner_gradient.png" alt="Quil Banner" width="100%" />
+</p>
+
 # Quil Language Support
 
 Syntax highlighting for the [Quil](https://github.com/quil-project/quil) programming language (`.quil` and `.qil` files).

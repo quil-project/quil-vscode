@@ -1,46 +1,56 @@
 {
-  "name": "quil-lang",
-  "publisher": "tanvir",
-  "displayName": "Quil Lang",
-  "description": "Syntax highlighting for the Quil programming language.",
-  "version": "1.3.3",
-  "icon": "icon.png",
-  "engines": {
-    "vscode": "^1.60.0"
-  },
-  "categories": [
-    "Programming Languages"
-  ],
-  "keywords": [
-    "quil",
-    "language",
-    "transpiler",
-    "syntax highlighting"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/quil-project/quil"
-  },
-  "bugs": {
-    "url": "https://github.com/quil-project/quil/issues"
-  },
-  "homepage": "https://quil-project.github.io",
-  "license": "MIT",
-  "galleryBanner": {
-    "color": "#010000",
-    "theme": "dark"
-  },
-  "contributes": {
-    "languages": [{
-      "id": "quil",
-      "aliases": ["Quil", "quil"],
-      "extensions": [".quil", ".qil"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "quil",
-      "scopeName": "source.quil",
-      "path": "./syntaxes/quil.tmLanguage.json"
-    }]
-  }
+        "name": "quil-lang",
+        "publisher": "tanvir",
+        "displayName": "Quil Lang",
+        "description": "Syntax highlighting for the Quil programming language.",
+        "version": "1.3.3",
+        "icon": "icon.png",
+        "engines": {
+                "vscode": "^1.60.0"
+        },
+        "categories": [
+                "Programming Languages"
+        ],
+        "keywords": [
+                "quil",
+                "language",
+                "transpiler",
+                "syntax highlighting"
+        ],
+        "repository": {
+                "type": "git",
+                "url": "https://github.com/quil-project/quil"
+        },
+        "bugs": {
+                "url": "https://github.com/quil-project/quil/issues"
+        },
+        "homepage": "https://quil-project.github.io",
+        "license": "MIT",
+        "galleryBanner": {
+                "color": "#010000",
+                "theme": "dark"
+        },
+        "contributes": {
+                "languages": [
+                        {
+                                "id": "quil",
+                                "aliases": [
+                                        "Quil",
+                                        "quil"
+                                ],
+                                "extensions": [
+                                        ".quil",
+                                        ".qil"
+                                ],
+                                "configuration": "./language-configuration.json"
+                        }
+                ],
+                "grammars": [
+                        {
+                                "language": "quil",
+                                "scopeName": "source.quil",
+                                "path": "./syntaxes/quil.tmLanguage.json"
+                        }
+                ]
+        }
 }
